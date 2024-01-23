@@ -110,7 +110,11 @@
   font-weight: 300;
   font-size: 20px;
 }
-
+.hero-banner-text .buttons{
+  display: flex;
+  text-align: center;
+  gap: 30px;
+}
 .hero-banner-text .buttons button {
   height: 3rem;
   width: 11rem;
