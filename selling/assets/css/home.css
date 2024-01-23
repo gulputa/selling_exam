@@ -51,12 +51,21 @@
   display: flex;
   gap: 10px;
 }
+.header-bottom.header-scroll{
+  padding: 1rem 0;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
 .header-bottom {
-  padding: 50px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header-bottom h1 {
   font-size: 40px;
   font-family: "Mulish", sans-serif;
@@ -187,25 +196,201 @@
   cursor: pointer;
 }
 
-.card button.cart{
+.card button.cart {
   border: 2px solid black;
   background-color: black;
   color: white;
   transition: all 0.5s;
 }
-.card button.cart:hover{
-    background-color: white;
-    color: black;
+.card button.cart:hover {
+  background-color: white;
+  color: black;
 }
-.card button.view{
-    border: 2px solid black;
-    background-color: white;
-    color: black;
-    transition: all 0.5s;
+.card button.view {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
 }
-.card button.view:hover{
-    background-color: black;
-    color: white;
+.card button.view:hover {
+  background-color: black;
+  color: white;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.about-right {
+  width: 50%;
+}
+.about-right img {
+  width: 100%;
+}
+.about-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-left span {
+  color: rgb(150, 147, 147);
+}
+.about-left p {
+  color: rgb(155, 151, 151);
+  width: 50%;
+}
+
+.about-left h1 {
+  font-size: 4rem;
+}
+.about-left button {
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.about-left button:hover {
+  background-color: transparent;
+  color: black;
+}
+.team-name {
+  text-align: center;
+  padding: 70px 0;
+}
+.team-name span {
+  color: rgb(155, 151, 151);
+}
+.team-name h1 {
+  font-size: 3rem;
+}
+.team-icons i {
+  border-radius: 50%;
+
+  padding: 10px;
+  background-color: rgb(138, 138, 138);
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.team-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.team-card img {
+  width: 100%;
+}
+.team-icons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.services-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.services-card{
+  width: 30%;
+}
+.one{
+  display: flex;
+  gap: 20px;
+}
+.one-text{
+  color: rgb(138, 138, 138);
+  width: 60%;
+}
+.one-icon i{
+  font-size: 4rem;
+  color: #f16812;
+}
+.services-name{
+  text-align: center;
+  padding: 80px 0;
+}
+.services-name span{
+  color: rgb(138, 138, 138);
+}
+.services-name h1{
+  font-size: 3rem;
+}
+.one-text span{
+  color: #f16812;
+}
+.footer-card {
+  width: 25%;
+  color:rgb(138, 138, 138) ;
+ 
+}
+.footer-card h2{
+  color: black;
+}
+.footer-card img{
+  width: 100%;
+}
+footer{
+  padding: 40px 0;
+}
+.quick-link nav ul{
+  display:flex ;
+  flex-direction: column;
+  gap: 30px;
+}
+.quick-link nav ul li a{
+  color: rgb(138, 138, 138);
+  font-size: 1.5rem;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.quick-link{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-us{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-card button{
+  margin: 20px 0;
+ padding: 10px 40px;
+  border: 2px solid black;
+  background-color: black;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+}
+.footer-card button:hover{
+background-color: transparent;
+color: black;
+}
+.footer-bottom{
+  padding: 50px 0;
+  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -252,8 +437,47 @@
     z-index: 2;
     padding: 4rem 8rem;
     right: 0;
-    /* left: 0; */
-    top: 0;
-    bottom: 0;
+    margin: 40px 0;
+  }
+  .cards {
+    display: block;
+  }
+  .card {
+    width: 100%;
+  }
+  .about {
+    display: block;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-right {
+    width: 100%;
+  }
+  .about-left h1 {
+    font-size: 2rem;
+  }
+  .team-cards{
+    display: block;
+  }
+  .team-card{
+    width: 100%;
+  }
+  .services-cards{
+   flex-direction: column;
+   gap: 30px;
+  }
+  .services-card{
+    width: 100%;
+  }
+  .services-name h1{
+    font-size: 2rem;
+  }
+  .footer{
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-card{
+    width: 100%;
   }
 }

@@ -1,6 +1,7 @@
 const navBar = document.querySelector("nav");
 const menuIcon = document.querySelector(".menu i");
 const cards = document.querySelector(".cards");
+const header = document.querySelector(".header-bottom");
 const BASE_URL = `http://localhost:8080`;
 
 menuIcon.addEventListener("click", function () {
@@ -9,13 +10,13 @@ menuIcon.addEventListener("click", function () {
     ? (this.className = "fa-solid fa-x")
     : (this.className = "fa-solid fa-bars");
 });
-let products=[]
+let products = [];
 async function getAllData() {
   try {
     const res = await axios(`${BASE_URL}/products`);
     console.log(res.data);
-    products=res.data
-    drawCards(products)
+    products = res.data;
+    drawCards(products);
   } catch (error) {
     console.log(error);
   }
@@ -40,49 +41,10 @@ function drawCards(data) {
         <button class="cart">Cart</button>
         <button class="view">View</button>
         `;
-        cards.append(cardElement)
+    cards.append(cardElement);
   });
 }
 
-
-
-// async function deleteCard(id, btn) {
-//     try {
-//       if (confirm("silmek isdeyirsen")) {
-//         await axios.delete(`${BASE_URL}/${id}`);
-//         btn.closest(".gym-card").remove();
-//       }
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   }
-  
-//   search.addEventListener("input", async function (e) {
-//     try {
-//       console.log(e.target.value);
-//       const res = await axios(`${BASE_URL}`);
-//       let filtered = res.data.filter((item) => {
-//         return item.name
-//           .toLocaleLowerCase()
-//           .includes(e.target.value.toLocaleLowerCase());
-//       });
-//       drawCards(filtered);
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   });
-//   sort.addEventListener("click", function () {
-//     let sorted;
-//     if (this.innerText === "Ascending") {
-//       sorted = productsData.sort((a, b) => a.price - b.price);
-//       this.innerText = "Descending";
-//     } else if (this.innerText === "Descending") {
-//       sorted = productsData.sort((a, b) => b.price - a.price);
-//       this.innerText = "Default";
-//     } else {
-//       sorted = copyProductsData;
-//       this.innerText = "Ascending";
-//     }
-//     //   console.log(sorted);
-//     drawCards(sorted);
-//   });
+window.addEventListener("scroll", function () {
+  header.classList.toggle("header-scroll", window.scrollY > 0);
+});

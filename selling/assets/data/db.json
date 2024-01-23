@@ -1,70 +1,66 @@
 {
-    "products":[
-        {
-            "id":"1",
-            "title":"Ewild West Hoodie",
-            "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "imgUrl":"./assets/image/model_1_bg.jpg",
-            "iconStar":"fa-solid fa-star",
-            "iconHeart":"fa-regular fa-heart",
-            "numberOne":5,
-            "numberTwo":29
-            
-        },
-        {
-            "id":"2",
-            "title":"Sild West Hoodie",
-            "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "imgUrl":"./assets/image/model_2_bg.jpg",
-            "iconStar":"fa-solid fa-star",
-            "iconHeart":"fa-regular fa-heart",
-            "numberOne":5,
-            "numberTwo":29
-            
-        },
-        {
-            "id":"3",
-            "title":"Pild West Hoodie",
-            "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "imgUrl":"./assets/image/model_2_bg.jpg",
-            "iconStar":"fa-solid fa-star",
-            "iconHeart":"fa-regular fa-heart",
-            "numberOne":5,
-            "numberTwo":29
-            
-        },
-        {
-            "id":"4",
-            "title":"Lild West Hoodie",
-            "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "imgUrl":"./assets/image/model_3_bg.jpg",
-            "iconStar":"fa-solid fa-star",
-            "iconHeart":"fa-regular fa-heart",
-            "numberOne":5,
-            "numberTwo":29
-            
-        },
-        {
-            "id":"6",
-            "title":" West koodie",
-            "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "imgUrl":"./assets/image/model_4_bg.jpg",
-            "iconStar":"fa-solid fa-star",
-            "iconHeart":"fa-regular fa-heart",
-            "numberOne":5,
-            "numberTwo":29
-            
-        },
-        {
-            "id":"5",
-            "title":" Hoodie",
-            "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "imgUrl":"./assets/image/model_5_bg.jpg",
-            "iconStar":"fa-solid fa-star",
-            "iconHeart":"fa-regular fa-heart",
-            "numberOne":5,
-            "numberTwo":29
-            
-        }
-    ]
+  "products": [
+    {
+      "id": "2",
+      "title": "Sild West Hoodie",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "imgUrl": "./assets/image/model_1_bg.jpg",
+      "iconStar": "fa-solid fa-star",
+      "iconHeart": "fa-regular fa-heart",
+      "numberOne": 5,
+      "numberTwo": 29
+    },
+    {
+      "id": "3",
+      "title": "Pild West Hoodie",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "imgUrl": "./assets/image/model_2_bg.jpg",
+      "iconStar": "fa-solid fa-star",
+      "iconHeart": "fa-regular fa-heart",
+      "numberOne": 5,
+      "numberTwo": 29
+    },
+    {
+      "id": "4",
+      "title": "Lild West Hoodie",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "imgUrl": "./assets/image/model_3_bg.jpg",
+      "iconStar": "fa-solid fa-star",
+      "iconHeart": "fa-regular fa-heart",
+      "numberOne": 5,
+      "numberTwo": 29
+    },
+    {
+      "id": "6",
+      "title": " West koodie",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "imgUrl": "./assets/image/model_4_bg.jpg",
+      "iconStar": "fa-solid fa-star",
+      "iconHeart": "fa-regular fa-heart",
+      "numberOne": 5,
+      "numberTwo": 29
+    },
+    {
+      "id": "5",
+      "title": " Hoodie",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "imgUrl": "./assets/image/model_5_bg.jpg",
+      "iconStar": "fa-solid fa-star",
+      "iconHeart": "fa-regular fa-heart",
+      "numberOne": 5,
+      "numberTwo": 29
+    },
+    {
+      "id": "ff3c",
+      "title": "Omnis ipsum et ad p",
+      "desc": "Molestiae molestiae ",
+      "imgUrl": "../image"
+    },
+    {
+      "id": "80ed",
+      "title": "Quisquam alias archi",
+      "desc": "Accusamus eligendi l",
+      "imgUrl": "../image"
+    }
+  ]
 }
